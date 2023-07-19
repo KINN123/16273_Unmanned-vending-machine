@@ -1,0 +1,16 @@
+<view class="container">
+  <block wx:key="index" wx:for="{{goodsList}}">
+    <view class="goods-list">
+      <navigator url="/pages/details/details?id={{item.product_id}}&img={{item.image_url}}&name={{item.name}}&number={{item.number}}&price={{item.price}}&info={{item.info}}">
+        <view class="img">
+          <image src="{{imgDownloadPath + item.image_url + imgTsValue}}" mode="scaleToFill"></image>
+        </view>
+        <view class="info">
+          <view class="tittle">{{item.name}}</view>
+          <view class="price">￥ {{item.price}}</view>
+          <view class="number">剩余数量 {{item.number}}</view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+</view>

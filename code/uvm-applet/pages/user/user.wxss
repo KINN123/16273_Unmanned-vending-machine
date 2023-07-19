@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 160rpx;
+  background: #AB956D;
+  font-size: 28rpx;
+  color: white;
+}
+
+.header .user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  height: 160rpx;
+}
+
+.header .user-info .nickname {
+  margin-left: 30rpx;
+}
+
+.header .avatar {
+  margin-left: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  height: 160rpx;
+  width: 100%;
+}
+
+.low_version {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 160rpx;
+  align-items: center;
+  font-size: 40rpx;
+}
+
+.option-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.option-list .option {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100%;
+  align-items: center;
+  border-bottom: 2rpx solid #e9e9e9;
+}

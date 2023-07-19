@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="image">
+    <image src="{{imgDownloadPath + img + imgTsValue}}" class="img" mode="widthFix"></image>
+  </view>
+  <view class="text_info">
+    <view class="name">{{name}}</view>
+    <!-- <view class="underline"></view> -->
+    <view class="price_n_number">
+      <view class="price">￥ {{price}}</view>
+      <view class="number">剩余数量 {{number}}</view>
+    </view>
+    <view class="introduction">{{info}}</view>
+  </view>
+</view>

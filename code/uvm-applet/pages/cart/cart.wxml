@@ -1,0 +1,21 @@
+<scroll-view class="scroll" scroll-y="true">
+  <block wx:key="index" wx:for="{{carts}}">
+    <view class="cart-container">
+      <image class="item-image" src="{{imgDownloadPath + item.imageUrl}}"></image>
+      <view class="info">
+        <text class="tittle">{{item.name}}</text>
+        <view class="number">
+          <text class="price">￥ {{item.price}}</text>
+          <text class="quantity">数量 {{item.number}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<view class="bottom-total">
+  <view class="bottom-line"></view>
+  <view class="bottom-content">
+    <text class="total-price">合计：￥ <text class="total-price-number">{{totalMoney}}</text></text>
+    <button style="width:40%;" class="pay" bindtap="submitOrder">去结算</button>
+  </view>
+</view>

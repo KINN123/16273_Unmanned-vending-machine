@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.img{
+  width: 100%;
+}
+.text_info {
+  background-color: white;
+  border-radius: 20rpx;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+  padding: 30rpx;
+}
+.name {
+  font-weight: bold;
+  font-size: 38rpx;
+}
+.underline {
+  margin: 15rpx 0 15rpx 0;
+  height: 2rpx;
+  width: 100%;
+  background-color: rgb(110, 110, 110);
+}
+.price_n_number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price {
+  color: red;
+  font-size: 40rpx;
+}
+.number {
+  color: darkgrey;
+  font-size: 30rpx;
+}
+.introduction {
+  color: rgb(110, 110, 110);
+  font-size: 32rpx;
+}

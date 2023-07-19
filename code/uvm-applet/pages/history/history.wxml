@@ -1,0 +1,39 @@
+<view class="container">
+  <block wx:key="id" wx:for="{{orders}}" wx:for-item="item">
+    <view class="history_list">
+      <view class="supply_info">
+        <view class="supplier">{{item.business_id}}</view>
+        <!-- <button class="cancel" bindtap="onCancel" style="position: relative; left: -196rpx; top: -18rpx; width: 239rpx; height: 84rpx; display: block; box-sizing: border-box">取消订单</button> -->
+        <view class="state" wx:if="{{item.status == true}}">已完成</view>
+        <view class="state" wx:else style="color: red; width: 84rpx; height: 46rpx; display: block; box-sizing: border-box">未完成</view>
+      </view>
+      <view class="order">
+        <view wx:key="product_id" wx:for="{{item.order_content}}" wx:for-item="order">
+          <view class="order_info">
+            <view class="img">
+              <image src="{{imgDownloadPath + order.imageUrl}}" mode="widthFix"></image>
+            </view>
+            <view class="text">
+              <view class="name">{{order.name}}</view>
+              <view class="price_n_number">
+                <view class="price">￥ {{order.price}}</view>
+                <view class="number"> × {{order.number}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="time_n_price">
+        <view class="time">{{item.created_time}}</view>
+        <view class="total">
+          <view class="total_number">
+            共{{item.number}}件商品，合计
+          </view>
+          <view class="total_price">
+            ￥{{item.price}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <swiper autoplay="true" circular="true" indicator-dots>
+    <swiper-item wx:key="index" wx:for="{{imagesPath}}">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view bind:tap="onTap" data-item="light" class="scan-button-square">
+    <text class="scan-open">点击开门</text>
+  </view> 
+   <!-- <view> -->
+     <!-- 已获得基本信息授权 -->
+    <!-- <image src="{{scanImage}}" bindtap="scanCodeEvent" mode="widthFix" class="scan-button"></image>
+  </view> -->
+ 
+
+</view>

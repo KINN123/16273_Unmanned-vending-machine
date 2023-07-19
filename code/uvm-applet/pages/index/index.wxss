@@ -1,0 +1,32 @@
+.container {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container swiper{
+  width: 100%;
+}
+.container swiper image{
+  width: 100%;
+}
+
+.scan-button-square {
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 10%;
+  text-align: center;
+  margin-top: 60rpx;
+}
+.scan-button {
+  margin-top: 50rpx;
+  width: 400rpx;
+}
+.scan-open {
+  font-size: 22rpx;
+  color: #405f80;
+  line-height: 80rpx;
+  font-weight: bold;
+}

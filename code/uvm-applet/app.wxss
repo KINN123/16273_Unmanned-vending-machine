@@ -1,0 +1,4 @@
+page {
+  background-color: #EDECE8;
+  height: 100%;
+}

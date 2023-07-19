@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/cart/cart",
+    "pages/goods/goods",
+    "pages/index/index",
+    "pages/details/details",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#AB956D",
+    "navigationBarTitleText": "Rocket 便利店",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#AB956D",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home_fill.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "iconPath": "images/icons/goods.png",
+        "selectedIconPath": "images/icons/goods_fill.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/icons/cart.png",
+        "selectedIconPath": "images/icons/cart_fill.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/icons/people.png",
+        "selectedIconPath": "images/icons/people_fill.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
